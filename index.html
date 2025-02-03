@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="trainer-container">
+        <h1>Keyboard Trainer</h1>
+        <div class="controls">
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+                <option value="zen">Zen</option> <!-- Added Zen Mode -->
+            </select>            
+            <button id="start-btn">Start</button>
+        </div>
+        <div id="trainer-display">
+            <div id="text-display"></div>
+            <textarea id="input-box" placeholder="Type here..." disabled></textarea>
+        </div>
+        <div id="results">
+            <p>WPM: <span id="wpm">0</span></p>
+            <p>Accuracy: <span id="accuracy">0</span>%</p>
+        </div>
+        
+        <button id="dark-mode-toggle">🌙 Dark Mode</button>
+        <button id="restart-btn" style="display: none;">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
